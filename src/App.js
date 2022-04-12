@@ -19,7 +19,7 @@ function App() {
 
   function calculate() {
     try {
-      setResult(eval(result).toString());
+      setResult(eval(result).toFixed(2).toString());
     } catch (error) {
       setResult("Error");
     }
