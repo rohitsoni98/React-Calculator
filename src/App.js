@@ -19,7 +19,11 @@ function App() {
 
   function calculate() {
     try {
-      setResult(eval(result).toFixed(2).toString());
+      if (e.target.name == ".") {
+        setResult(eval(result).toFixed(2).toString());
+      } else {
+        setResult(eval(result).toString());
+      }
     } catch (error) {
       setResult("Error");
     }
